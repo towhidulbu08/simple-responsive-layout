@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            border:3px solid peru;
+            max-width:1140px;
+            margin:0 auto;
+        }
+        .img-container{
+            display: flex;
+            align-items: center;
+        }
+        .img{
+            width:50%;
+        }
+        .img img{
+            width:100%;
+        }
+        @media screen and (max-width:576px) {
+            .img-container{
+                flex-direction:column;
+            }
+            .img{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ol>
+            <li>viewport meta tag</li>
+            <li>Css relative unit</li>
+            <li>body max-width and center align</li>
+            <li>fluid image</li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </header>
+    <main>
+       <div class="img-container">
+        <div class="img"> 
+            <img src="download.jpg" alt="">
+        </div>
+        <div class="img"> 
+            <img src="Tiger.jpg" alt="">
+        </div>
+       </div>
+    </main> 
+</body>
+</html>
